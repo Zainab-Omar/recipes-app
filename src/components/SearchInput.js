@@ -1,26 +1,25 @@
 import React, { useState } from 'react'
-import DataRequest from './DataRequest'
 import Recipes from './Recipes'
 import axios from 'axios'
 
 function SearchInput() {
     const [query, setQuery] = useState("")
     const [recipes, setRecipes] = useState([])
-
+    const url = `https://api.edamam.com/search?q=${query}&app_id=${process.env.REACT_APP_ID}&app_key=${process.env.REACT_APP_KEY}`
+ 
    const handleChange = e => {
        setQuery(e.target.value)
     }
 
    const handleSubmit = e => {
         e.preventDefault()
-        DataRequest(query)
+        dataRequest()
     }
 
-    const dataRequest = async (query) => {
-        const url = `https://api.edamam.com/search?q=${query}&app_id=${process.env.REACT_APP_ID}&app_key=${process.env.REACT_APP_KEY}`
-       if (query !== "") {
+    const dataRequest = async () => {
+        if (query !== "") {
            const result = await axios.get(url)
-           console.log(result.data)
+           setRecipes(result.data)
        }
        
    }
@@ -38,7 +37,7 @@ function SearchInput() {
             </form>
 
             <div>
-                {recipes !== [] && <Recipes recipes={recipes} />}
+             <Recipes recipes={recipes.hits} />
             </div>
             
         </div>

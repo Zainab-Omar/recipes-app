@@ -1,6 +1,4 @@
 // import './App.css';
-
-// import Recipes from "./components/Recipes";
 import SearchInput from "./components/SearchInput";
 
 function App() {
