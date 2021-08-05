@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import DataRequest from './DataRequest'
 import Recipes from './Recipes'
+import axios from 'axios'
 
 function SearchInput() {
     const [query, setQuery] = useState("")
@@ -14,6 +15,15 @@ function SearchInput() {
         e.preventDefault()
         DataRequest(query)
     }
+
+    const dataRequest = async (query) => {
+        const url = `https://api.edamam.com/search?q=${query}&app_id=${process.env.REACT_APP_ID}&app_key=${process.env.REACT_APP_KEY}`
+       if (query !== "") {
+           const result = await axios.get(url)
+           console.log(result.data)
+       }
+       
+   }
 
     return (
         <div>
