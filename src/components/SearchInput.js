@@ -34,8 +34,8 @@ function SearchInput() {
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
-                <h2>{error}</h2>
+            <form onSubmit={handleSubmit} className="search-form">
+                <h2 className="error">{error}</h2>
                 <input type="text"
                 name="query"
                 value={query} 

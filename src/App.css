@@ -1,1 +1,32 @@
+.search-form {
+  width: 60rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  margin-left: 15%;
+  margin-bottom: 5rem;
+} 
 
+.search-form input {
+  font-size: 1.6rem;
+  border: none;
+  height: 3rem;
+  text-align: center;
+}
+
+.search-form input[type="text"] {
+  padding: 0 0.5rem;
+  width: 60%;
+  color: black;
+}
+
+.search-form input[type="submit"] {
+  width: 25%;
+  text-transform: uppercase;
+  background-color: plum;
+  color: black;
+}
