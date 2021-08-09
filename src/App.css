@@ -30,3 +30,17 @@
   background-color: plum;
   color: black;
 }
+.recipe {
+  width: 300px;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  background-color:plum;
+  padding: 2rem;
+  position: relative;
+  border-radius: 0.5rem;
+  float: left;
+}
+.error{
+  color: red;
+}
