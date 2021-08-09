@@ -21,7 +21,7 @@ function SearchInput() {
         if (query !== "") {
            const result = await axios.get(url)
            if (result.data.more === false){
-               return setError("no food with such name")
+               return setError("No food with such name")
            }
            setRecipes(result.data)
            setQuery("")

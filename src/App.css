@@ -1,3 +1,4 @@
+
 .search-form {
   width: 60rem;
   height: 10rem;
@@ -43,4 +44,5 @@
 }
 .error{
   color: red;
+ padding-left: 70px;
 }
