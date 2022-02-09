@@ -2,7 +2,7 @@
 https://brave-saha-647170.netlify.app/
 
 # Recipes application Demo
-Recipe app is using edamam api and return ten recipes based on the user input. Each recipe show recipe picture, name, details (which contain food calories and cautions), ingredients, and recipe url that takes user to different website to view more details or more recipes.
+The recipe app is using Edamam API and returns ten recipes based on the user input. Each recipe shows a recipe picture, name, details (which contain food calories and cautions), ingredients, and recipe URL that takes the user to a different website to view more details or more recipes.
 
 I used Axios to send request to edamam api. Also I used React hooks to manage state (useState hook).
 
