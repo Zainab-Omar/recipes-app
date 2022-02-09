@@ -38,7 +38,7 @@ body{
 
 .recipe {
   width: 20%;
-  height: 560px;
+  min-height: 560px;
   display: flex;
   flex-direction: column;
   background-color:plum;
@@ -54,12 +54,9 @@ body{
  font-size: 35px;
 }
 
-/* img{
-  width:350px;
-  height: 350px;
-  margin-left: auto;
-  margin-right: auto;
-} */
+button{
+  border-radius: 12px;
+}
 
 .welcome{
   color: rgb(238, 9, 9);
