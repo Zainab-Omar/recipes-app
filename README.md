@@ -1,5 +1,11 @@
 # Accessb React App at this link
 https://brave-saha-647170.netlify.app/
+
+# Recipes application Demo
+Recipe app is using edamam api and return ten recipes based on the user input. Each recipe show recipe picture, name, details (which contain food calories and cautions), ingredients, and recipe url that takes user to different website to view more details or more recipes.
+
+I used Axios to send request to edamam api. Also I used React hooks to manage state (useState hook).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
