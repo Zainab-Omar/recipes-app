@@ -1,15 +1,19 @@
-
+body{
+  background-image: url("https://diplomartbrussels.com/wp-content/uploads/2020/09/food-background-images-94-images-in-co-381169-png-images-pngio-food-background-png-1440_619.png");
+  background-color: rgb(247, 244, 241);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .search-form {
   width: 60rem;
   height: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: purple;
+  background-color: rgb(156, 112, 153);
   border-radius: 1rem;
-  margin-top: 3rem;
-  margin-left: 15%;
-  margin-bottom: 5rem;
+  margin-left: 21%;
+  margin-bottom: 40px;
 } 
 
 .search-form input {
@@ -31,18 +35,37 @@
   background-color: plum;
   color: black;
 }
+
 .recipe {
-  width: 300px;
-  margin: 3rem;
+  width: 20%;
+  height: 560px;
   display: flex;
   flex-direction: column;
   background-color:plum;
-  padding: 2rem;
-  position: relative;
+  padding: 30px;
   border-radius: 0.5rem;
   float: left;
+  margin-left: 24px;
+  margin-bottom: 20px;
 }
 .error{
   color: red;
  padding-left: 70px;
+ font-size: 35px;
+}
+
+/* img{
+  width:350px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.welcome{
+  color: rgb(238, 9, 9);
+  text-align: center;
+  font-size: 100px;
+  text-shadow: 3px 5px rgb(156, 191, 194) ;
+  margin-top: 5px;
+  
 }

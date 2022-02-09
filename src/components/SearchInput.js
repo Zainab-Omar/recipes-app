@@ -45,10 +45,8 @@ function SearchInput() {
                 <input type='submit' value="Search" />
             </form>
 
-            <div>
              <Recipes recipes={recipes.hits} />
-            </div>
-            
+           
         </div>
     )
 }
